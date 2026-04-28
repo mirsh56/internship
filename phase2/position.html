@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Position Example</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+/* Container (relative) */
+.container {
+    position: relative;
+    width: 300px;
+    margin: 80px auto;
+}
+
+/* Image */
+.container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Top-right badge */
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Bottom text */
+.text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.7);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Fixed button */
+.fixed-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: cyan;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>Position Example</h2>
+
+<div class="container">
+    <img src="https://m.media-amazon.com/images/I/71f5Eu5lJSL._SX695_.jpg" alt="Smart Watch">
+
+    <div class="badge">New</div>
+    <div class="text">Smart Watch</div>
+</div>
+
+<div class="fixed-btn">Buy</div>
+
+</body>
+</html>
